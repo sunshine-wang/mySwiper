@@ -6,82 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Swiper Plugin Document</title>
-    <style>
-        .swiper_panel {
-            width: 500px;
-            height: 300px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .swiper_content {
-            overflow: hidden;
-            padding: 0;
-            margin: 0;
-            width: 2500px;
-        }
-
-        .swiper_content li {
-            width: 500px;
-            height: 300px;
-            float: left;
-            list-style: none;
-        }
-
-        .first {
-            background-color: antiquewhite;
-        }
-
-        .second {
-            background-color: blueviolet;
-        }
-
-        .third {
-            background-color: brown;
-        }
-
-        .fourth {
-            background-color: chartreuse;
-        }
-        .swiper_btn{
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            margin: auto;
-            width: 500px;
-            height: 50px;
-        }
-        .swiper_btn span{
-            display: block;
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-        }
-        .left{
-            float: left;
-        }
-        .right{
-            float: right;
-        }
-        .bar_icon{
-            position: absolute;
-            bottom: 20px;
-            left: 0;
-            right: 0;
-            margin: auto;
-            text-align: center;
-        }
-        .bar_icon span{
-            display: inline-block;
-            width: 20px;
-            height:20px;
-            background-color: #fff;
-            text-align: center;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -98,7 +23,7 @@
             <span class="right" onclick="right()">&gt;</span>
         </div>
         <div class="bar_icon" onclick="check(event)">
-            <span>1</span>
+            <span class="active">1</span>
             <span>2</span>
             <span>3</span>
             <span>4</span>

@@ -1,4 +1,4 @@
-var swiper = Swiper();
+var swiper = $s();
 function right() {
     swiper.right();
 }

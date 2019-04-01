@@ -1,0 +1,78 @@
+.swiper_panel {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper_content {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 2500px;
+}
+
+.swiper_content li {
+    width: 500px;
+    height: 300px;
+    float: left;
+    list-style: none;
+}
+
+.first {
+    background-color: antiquewhite;
+}
+
+.second {
+    background-color: blueviolet;
+}
+
+.third {
+    background-color: brown;
+}
+
+.fourth {
+    background-color: chartreuse;
+}
+.swiper_btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 500px;
+    height: 50px;
+}
+.swiper_btn span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.bar_icon{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+.bar_icon span{
+    display: inline-block;
+    width: 20px;
+    height:20px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.bar_icon .active{
+    background-color:black;
+    color:#fff;
+}

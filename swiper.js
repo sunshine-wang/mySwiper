@@ -34,11 +34,20 @@
         },
         check: function (event) {
             var barList = document.getElementsByClassName('bar_icon')[0].children;
+            var ifRemove = false;
             for (var i = 0; i < barList.length; i++) {
-                if (barList[i] == event.target) {
+                if(barList[i].className == 'active' && ifRemove == false){
+                    barList[i].className = '';
+                    ifRemove = true;
+                }else if (barList[i] == event.target) {
                     console.log(i);
                     swiperContent.style.marginLeft = -width * i + 'px';
                     swiperContent.style.transition = 'margin-left 0.3s';
+                    barList[i].className = 'active';
+                }
+                if(ifRemove == false && barList[i+1].className == 'active'){
+                    barList[i+1].className = '';
+                    ifRemove = true;
                 }
             }
             return this;
@@ -57,6 +66,6 @@
 
     init.prototype = Swiper.fn;
 
-    var $s = window.Swiper = Swiper;
+    window.$s = window.Swiper = Swiper;
     return Swiper;
 })()
